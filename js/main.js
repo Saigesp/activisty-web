@@ -31,4 +31,26 @@
       emailCta.textContent = email;
     }
   }
+
+  var guideContent = document.getElementById('guideContent');
+  if (guideContent && window.showdown) {
+    fetch('md/USER_GUIDE.md')
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error('No se pudo cargar la guía.');
+        }
+        return response.text();
+      })
+      .then(function (markdown) {
+        var converter = new showdown.Converter({
+          tables: true,
+          simpleLineBreaks: true,
+          strikethrough: true
+        });
+        guideContent.innerHTML = converter.makeHtml(markdown);
+      })
+      .catch(function () {
+        guideContent.textContent = 'No se ha podido cargar la guía de usuario.';
+      });
+  }
 })();
