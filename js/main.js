@@ -34,7 +34,7 @@
 
   var guideContent = document.getElementById('guideContent');
   if (guideContent && window.showdown) {
-    fetch('md/USER_GUIDE.md')
+    fetch('md/PLATFORM_DESCRIPTION.md')
       .then(function (response) {
         if (!response.ok) {
           throw new Error('No se pudo cargar la guía.');
