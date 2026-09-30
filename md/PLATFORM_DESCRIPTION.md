@@ -66,6 +66,11 @@ Cada cuenta reúne su información de perfil, datos de contacto y opciones de se
 
 Según los **permisos disponibles**, la gestión de cuentas incluye la actualización de datos, el cambio de contraseña, la activación o desactivación de cuentas y su eliminación. Las personas administradoras pueden también modificar los roles de coordinación para adaptar la estructura de gestión de la organización.
 
+### Inicio de sesión
+
+La aplicación permite iniciar sesión tanto con **email y contraseña**, con el **inicio de sesión de Google**, o con **PassKeys** (dispositivos, huella dactilar, etc.).
+
+Pueden configurarse distintos requerimientos según el rol de usuario, por ejemplo que las administradoras solo puedan iniciar sesión con Google y/o con PassKeys, lo que añade una capa de seguridad extra a la aplicación.
 
 ## Actividades
 
@@ -140,6 +145,7 @@ Las noticias pueden tener una fecha de publicación programada. Hasta que llega 
 
 La sección de Administración solo es visible para administradores/as y agrupa herramientas de configuración global de la plataforma.
 
+- **Portada**: Se pueden añadir contenidos personalizables en la portada, con distintos tipos de texto, enlaces y botones, para poder apuntar información útil, enlaces de interés, etc.
 - **Temas de interés**: Las temáticas se sugieren al crear una actividad y ayudan a clasificar los intereses de los contactos recogidos.
 - **Registro de eventos de actividades**: La aplicación conserva el historial de cambios y eventos de las actividades, como su creación, modificación o cambios en las áreas. Este registro facilita la auditoría de lo realizado y de las personas responsables.
 - **Etiquetas**: Las etiquetas permiten catalogar a las activistas y controlar su acceso a determinadas actividades ocultas o restringidas. La aplicación permite crear y administrar estas etiquetas.
